@@ -7,12 +7,12 @@ function add(n1, n2, phrase, show) {
     }
 }
 var number1;
-var number2;
+// let number2: number;
 var resultPhrase;
-var showResult;
+// let showResult: boolean;
 number1 = 3;
-number2 = 5;
+var number2 = 5; //<== type inference
 resultPhrase = 'The "add" result is: ';
-showResult = true;
-var result = add(number1, number1, resultPhrase, showResult);
+var showResult = true; //<== bool and also constant
+var result = add(number1, number2, resultPhrase, showResult);
 console.log(result);

@@ -7,14 +7,14 @@ function add(n1: number, n2: number, phrase: string, show: boolean) {
 }
 
 let number1: number;
-let number2: number;
+// let number2: number;
 let resultPhrase: string;
-let showResult: boolean;
+// let showResult: boolean;
 
 number1 = 3;
-number2 = 5;
+let number2 = 5; //<== type inference
 resultPhrase = 'The "add" result is: ';
-showResult = true;
+const showResult = true; //<== bool and also constant
 
-const result = add(number1, number1, resultPhrase, showResult);
+const result = add(number1, number2, resultPhrase, showResult);
 console.log(result);

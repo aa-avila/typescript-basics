@@ -1,0 +1,24 @@
+{
+  "name": "typescript-basics",
+  "version": "1.0.0",
+  "description": "Proyecto básico para práctica de TypeScript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa-avila/typescript-basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aa-avila/typescript-basics/issues"
+  },
+  "homepage": "https://github.com/aa-avila/typescript-basics#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

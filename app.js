@@ -1,4 +1,5 @@
 /************************************************************ */
+//Basics
 function add(n1, n2, phrase, show) {
     if (show) {
         return phrase + "".concat(n1 + n2);
@@ -18,6 +19,7 @@ var showResult = true; //<== bool and also constant
 var result = add(number1, number2, resultPhrase, showResult);
 console.log(result);
 /************************************************************ */
+//Enum Types
 var CivilStatus;
 (function (CivilStatus) {
     CivilStatus[CivilStatus["MARRIED"] = 0] = "MARRIED";
@@ -55,3 +57,21 @@ var combinedMix = combine('mezcla de string y numero ', 345);
 console.log('Combined Nums: ', combinedNums);
 console.log('Combined Words: ', combinedWords);
 console.log('Combined Mix: ', combinedMix);
+/************************************************************ */
+//Literal + Union Types
+function convert(input, resultConversion //<== literal + union
+) {
+    var result;
+    if (resultConversion === 'to-number') {
+        result = +input;
+    }
+    if (resultConversion === 'to-string') {
+        result = input.toString();
+    }
+    return result;
+}
+var convertNumToStr = convert(89, 'to-string');
+var convertStrToNum = convert('76', 'to-number');
+console.log('NumToStr: ', convertNumToStr);
+console.log('StrToNum: ', convertStrToNum);
+/************************************************************ */

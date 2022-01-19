@@ -1,4 +1,5 @@
 /************************************************************ */
+//Basics
 function add(n1: number, n2: number, phrase: string, show: boolean) {
   if (show) {
     return phrase + `${n1 + n2}`;
@@ -20,6 +21,7 @@ const showResult = true; //<== bool and also constant
 const result = add(number1, number2, resultPhrase, showResult);
 console.log(result);
 /************************************************************ */
+//Enum Types
 
 enum CivilStatus {
   'MARRIED',
@@ -47,9 +49,10 @@ person.role[0] = 1;
 person.role[1] = 'user';
 
 console.log('person object: ', person);
-/************************************************************ */
 
+/************************************************************ */
 //Union Types
+
 function combine(input1: number | string, input2: number | string) {
   let result;
   if (typeof input1 === 'number' && typeof input2 === 'number') {
@@ -68,3 +71,28 @@ const combinedMix = combine('mezcla de string y numero ', 345);
 console.log('Combined Nums: ', combinedNums);
 console.log('Combined Words: ', combinedWords);
 console.log('Combined Mix: ', combinedMix);
+
+/************************************************************ */
+//Literal + Union Types
+
+function convert(
+  input: number | string,
+  resultConversion: 'to-string' | 'to-number' //<== literal + union
+) {
+  let result;
+  if (resultConversion === 'to-number') {
+    result = +input;
+  }
+  if (resultConversion === 'to-string') {
+    result = input.toString();
+  }
+  return result;
+}
+
+const convertNumToStr = convert(89, 'to-string');
+const convertStrToNum = convert('76', 'to-number');
+
+console.log('NumToStr: ', convertNumToStr);
+console.log('StrToNum: ', convertStrToNum);
+
+/************************************************************ */

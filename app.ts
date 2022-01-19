@@ -47,3 +47,23 @@ person.role[0] = 1;
 person.role[1] = 'user';
 
 console.log('person object: ', person);
+/************************************************************ */
+
+function combine(input1: number | string, input2: number | string) {
+  let result;
+  if (typeof input1 === 'number' && typeof input2 === 'number') {
+    result = input1 + input2;
+  } else {
+    result = input1.toString() + input2.toString();
+  }
+  return result;
+}
+
+const combinedNums = combine(45, 34);
+const combinedWords = combine('hola, ', 'como estas?');
+const combinedMix = combine('mezcla de string y numero ', 345);
+//const error = combine('string, ', [1, 'chau', false]); //<== esto da error ya que no coincide con los types de la funcion
+
+console.log('Combined Nums: ', combinedNums);
+console.log('Combined Words: ', combinedWords);
+console.log('Combined Mix: ', combinedMix);

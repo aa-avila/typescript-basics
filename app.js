@@ -18,9 +18,18 @@ var showResult = true; //<== bool and also constant
 var result = add(number1, number2, resultPhrase, showResult);
 console.log(result);
 /************************************************************ */
+var CivilStatus;
+(function (CivilStatus) {
+    CivilStatus[CivilStatus["MARRIED"] = 0] = "MARRIED";
+    CivilStatus[CivilStatus["WIDOWED"] = 1] = "WIDOWED";
+    CivilStatus[CivilStatus["SEPARATED"] = 2] = "SEPARATED";
+    CivilStatus[CivilStatus["DIVORCED"] = 3] = "DIVORCED";
+    CivilStatus[CivilStatus["SINGLE"] = 4] = "SINGLE";
+})(CivilStatus || (CivilStatus = {}));
 var person = {
     name: 'Agus',
     age: 31,
+    civilStatus: CivilStatus.SINGLE,
     hobbies: ['piano', 'cooking'],
     role: [0, 'admin']
 };

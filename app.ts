@@ -21,14 +21,24 @@ const result = add(number1, number2, resultPhrase, showResult);
 console.log(result);
 /************************************************************ */
 
+enum CivilStatus {
+  'MARRIED',
+  'WIDOWED',
+  'SEPARATED',
+  'DIVORCED',
+  'SINGLE'
+}
+
 const person: {
   name: string;
   age: number;
+  civilStatus: number;
   hobbies: string[];
   role: [number, string]; //<== Tuple
 } = {
   name: 'Agus',
   age: 31,
+  civilStatus: CivilStatus.SINGLE,
   hobbies: ['piano', 'cooking'],
   role: [0, 'admin']
 };

@@ -1,3 +1,4 @@
+/************************************************************ */
 function add(n1, n2, phrase, show) {
     if (show) {
         return phrase + "".concat(n1 + n2);
@@ -16,3 +17,10 @@ resultPhrase = 'The "add" result is: ';
 var showResult = true; //<== bool and also constant
 var result = add(number1, number2, resultPhrase, showResult);
 console.log(result);
+/************************************************************ */
+var person = {
+    name: 'Agus',
+    age: 31,
+    hobbies: ['piano', 'cooking']
+};
+console.log('person object: ', person);

@@ -25,10 +25,15 @@ const person: {
   name: string;
   age: number;
   hobbies: string[];
+  role: [number, string]; //<== Tuple
 } = {
   name: 'Agus',
   age: 31,
-  hobbies: ['piano', 'cooking']
+  hobbies: ['piano', 'cooking'],
+  role: [0, 'admin']
 };
+
+person.role[0] = 1;
+person.role[1] = 'user';
 
 console.log('person object: ', person);

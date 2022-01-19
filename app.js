@@ -37,6 +37,7 @@ person.role[0] = 1;
 person.role[1] = 'user';
 console.log('person object: ', person);
 /************************************************************ */
+//Union Types
 function combine(input1, input2) {
     var result;
     if (typeof input1 === 'number' && typeof input2 === 'number') {

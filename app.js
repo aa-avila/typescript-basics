@@ -79,3 +79,10 @@ var myCustom2;
 myCustom1 = 3;
 myCustom2 = 'qwerty';
 console.log('Type Aliases: ', myCustom1, myCustom2);
+/************************************************************ */
+// Return Types in functions
+function multiply(a, b) {
+    //return 'hola'; //<-- esto da error
+    return a * b;
+}
+console.log('Function with return type: ', multiply(4, 5));

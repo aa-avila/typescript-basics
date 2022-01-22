@@ -74,4 +74,8 @@ var convertNumToStr = convert(89, 'to-string');
 var convertStrToNum = convert('76', 'to-number');
 console.log('NumToStr: ', convertNumToStr);
 console.log('StrToNum: ', convertStrToNum);
-/************************************************************ */
+var myCustom1;
+var myCustom2;
+myCustom1 = 3;
+myCustom2 = 'qwerty';
+console.log('Type Aliases: ', myCustom1, myCustom2);

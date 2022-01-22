@@ -96,3 +96,14 @@ console.log('NumToStr: ', convertNumToStr);
 console.log('StrToNum: ', convertStrToNum);
 
 /************************************************************ */
+// Type Aliases
+
+type CustomType = number | string;
+
+let myCustom1: CustomType;
+let myCustom2: CustomType;
+
+myCustom1 = 3;
+myCustom2 = 'qwerty';
+
+console.log('Type Aliases: ', myCustom1, myCustom2);

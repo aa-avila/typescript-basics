@@ -117,3 +117,24 @@ function multiply(a: number, b: number): number {
 }
 
 console.log('Function with return type: ', multiply(4, 5));
+
+/************************************************************ */
+// Function Types
+
+let someFunction: (a: number, b: number) => number;
+
+//someFunction = add; //<-- tira error
+someFunction = multiply;
+console.log('Function types example: ', multiply(12, 98));
+
+//--
+function printNumber(num: number): void {
+  console.log('printNumber: ', num);
+}
+
+function addAndHandle(n1: number, n2: number, cb: (res: number) => void) {
+  const result = n1 + n2;
+  cb(result);
+}
+
+addAndHandle(7, 3, printNumber);

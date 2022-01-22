@@ -86,3 +86,18 @@ function multiply(a, b) {
     return a * b;
 }
 console.log('Function with return type: ', multiply(4, 5));
+/************************************************************ */
+// Function Types
+var someFunction;
+//someFunction = add; //<-- tira error
+someFunction = multiply;
+console.log('Function types example: ', multiply(12, 98));
+//--
+function printNumber(num) {
+    console.log('printNumber: ', num);
+}
+function addAndHandle(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+addAndHandle(7, 3, printNumber);
